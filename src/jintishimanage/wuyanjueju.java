@@ -29,7 +29,7 @@ public class wuyanjueju {
 //		x平平仄仄，x仄仄平平
 //		二四局末尾押韵
 		if(yun1(str)&&pingze1(str)){
-			System.out.println("符合五言规则1:x仄平平仄，平平x仄平。x平平仄仄，x仄仄平平。二四局末尾押韵");
+			System.out.println("符合五言规则1:x仄平平仄，平平x仄平。x平平仄仄，x仄仄平平。二四句末尾押韵");
 			return true;
 		}
 		return false;

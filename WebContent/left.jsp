@@ -4,7 +4,6 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>Insert title here</title>
 <style type="text/css">
 <!--
 a:link{
@@ -42,6 +41,6 @@ color:#8B8B83;
 </head>
 <body background="images/grey.jpg">
 	<p align="right" class="word1"><a href="jueju.jsp" target="right">绝句</a></p>
-	<p align="right" class="word2"><a href="lvshi.action" target="right">律诗</a></p>
+	<p align="right" class="word2"><a href="lvshi.jsp" target="right">律诗</a></p>
 </body>
 </html>

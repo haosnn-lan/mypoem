@@ -20,13 +20,13 @@ public class wuyanlvshi {
 	//偶数句末尾入韵
 	static public boolean yayun(String str){
 		char no1=str.charAt(9),no2=str.charAt(19),no3=str.charAt(29),no4=str.charAt(39);
-		String first=jintishiBase.returnyun(no1),second=jintishiBase.returnyun(no2),third=jintishiBase.returnyun(no3),forth=jintishiBase.getyunmu(no4);
+		String first=jintishiBase.returnyun(no1),second=jintishiBase.returnyun(no2),third=jintishiBase.returnyun(no3),forth=jintishiBase.returnyun(no4);
 		for(int i=0;i<first.length();i++){
 			for(int j=0;j<second.length();j++){
-				for(int k=0;k<third.length();i++){
+				for(int k=0;k<third.length();k++){
 					for(int l=0;l<forth.length();l++){
 						if(first.charAt(i)==second.charAt(j)&&first.charAt(i)==third.charAt(k)&&first.charAt(i)==forth.charAt(l)&&second.charAt(j)==third.charAt(k)&&second.charAt(j)==forth.charAt(l)&&third.charAt(k)==forth.charAt(l)){
-							System.out.println("符合七言诗律押韵规则");
+							System.out.println("符合五言诗律押韵规则");
 							return true;
 						}
 					}

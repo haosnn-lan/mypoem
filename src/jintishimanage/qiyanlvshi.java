@@ -18,7 +18,7 @@ public class qiyanlvshi {
 
 	static public boolean yayun(String str){
 		char no1=str.charAt(13),no2=str.charAt(27),no3=str.charAt(41),no4=str.charAt(55);
-		String first=jintishiBase.returnyun(no1),second=jintishiBase.returnyun(no2),third=jintishiBase.returnyun(no3),forth=jintishiBase.getyunmu(no4);
+		String first=jintishiBase.returnyun(no1),second=jintishiBase.returnyun(no2),third=jintishiBase.returnyun(no3),forth=jintishiBase.returnyun(no4);
 		for(int i=0;i<first.length();i++){
 			for(int j=0;j<second.length();j++){
 				for(int k=0;k<third.length();i++){

@@ -212,13 +212,61 @@ public class jintishiBase {
 				}
 			}
 			String str=jintishiBase.getpinyin(c);
+			boolean judge2=false;
 			for(int i=0;i<str.length()-2;i++){
 				char tmp=str.charAt(i);
+				if(tmp=='2')
+					judge2=true;
 				if(tmp=='3'||tmp=='4'){
 					return true;
 				}
+				
+				//普通话读音为fa、fo的字，都是古入声字（古仄音）。如发、佛、罚、法、伐等。
+				if(tmp=='f')
+					if(str.charAt(i+1)=='a'||str.charAt(i+1)=='o')
+						if(str.charAt(i+2)>='0'&&str.charAt(i+2)<'6')
+							return true;
+				
+				//普通话声母为b、p、d、t、n与韵母“ie”相拼的字除“爹”字外，其余都是古入声字（古仄音）
+				if(tmp=='b'||tmp=='p'||tmp=='t'||tmp=='d'||tmp=='n')
+						if(str.charAt(i+1)=='i'&&str.charAt(i+2)=='e')
+							return true;
+				
+				//普通话里，凡韵母“ue”的字，除“瘸”、“嗟”字外，其余都是古入声字（古仄音）
+				if(tmp=='u'&&str.charAt(i+1)=='e')
+					return true;
+				
+				//普通话里，凡声母d、t、n、l、z、c、s与韵“e”相拼的字，都是古入声字（古仄音）。如策、得、恻、德、勒、讷、责、则、泽、忒、瑟、色等。
+				if(tmp=='d'||tmp=='t'||tmp=='n'||tmp=='l'||tmp=='z'||tmp=='c'||tmp=='s')
+					if(str.charAt(i+1)=='e'&&str.charAt(i+2)>='0'&&str.charAt(i+2)<'6')
+						return true;
+		
+				//五、普通话里凡声母为k、zh、ch、sh、r与韵母“uo”相拼的字，都是古入声字（古仄音）
+				if(tmp=='k'||tmp=='r')
+					if(str.charAt(i+1)=='u'&&str.charAt(i+2)=='o')
+						return true;
+				if(tmp=='z'||tmp=='c'||tmp=='s')
+					if(str.charAt(i+1)=='h')
+						if(str.charAt(i+2)=='u'&&str.charAt(i+3)=='o')
+							return true;
 			}
+			
+				//普通话阳平声（二声）的字里，凡声母为b、d、g、j、z、zh者，都是古入声字（古仄音）。
+				if(judge2){
+					for(int i=0;i<str.length()-2;i++){
+						char tmp=str.charAt(i);
+						if(tmp=='b'||tmp=='d'||tmp=='g'||tmp=='j'||tmp=='z')
+							return true;
+					}
+				}
+			
+			
 			return false;
+//			if(tmp=='2'){
+//				if(tmp=='b'||tmp=='d'||tmp=='g'||tmp=='j'||tmp=='z'){
+//					return true;
+//				}
+//			}
 		}
 		
 	

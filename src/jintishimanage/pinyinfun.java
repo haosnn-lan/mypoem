@@ -28,9 +28,11 @@ public class pinyinfun {
 
 		
 
-		System.out.println(qiyanjueju.judge_qyjj(str7));
-		//System.out.println(jintishiBase.judge_ze('拔'));
-		//System.out.println(jintishiBase.judge_ping('看'));
+		System.out.println(jintishiBase.returnyun('舟'));
+		System.out.println(jintishiBase.returnyun('流'));
+		System.out.println(jintishiBase.returnyun('休'));
+		System.out.println(jintishiBase.returnyun('鸥'));
+		System.out.println(wuyanlvshi.yayun("细草微风岸危樯独夜舟星垂平野阔月涌大江流名岂文章著官应老病休飘飘何所似天地一沙鸥"));
 	
 
 
