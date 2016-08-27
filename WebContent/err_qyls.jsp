@@ -6,8 +6,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
 </head>
 <body background="images/grey.jpg">
-<p><b>你的五言绝句平仄或者韵律上有问题,你可以根据下面的规则改进您的“近体诗”</b></p>
-<p>下面是五言律诗基本的平仄规则  x代表可平可仄</p>
+<p><b>你的七言律诗平仄或者韵律上有问题,你可以根据下面的规则改进您的“近体诗”</b></p>
+<p>下面是七言律诗的基本平仄押韵规则  x代表可平可仄</p>
 
 <p><b><font color="red">平仄规则1：x平x仄平平仄，x仄平平仄仄平。x仄x平平仄仄，x平x仄仄平平。x平x仄平平仄，x仄平平仄仄平。x仄x平平仄仄，x平x仄仄平平。</font></b></p>
 <p><b><font color="red">平仄规则2：x仄平平仄仄平，x平x仄仄平平。x平x仄平平仄，x仄平平仄仄平。x仄x平平仄仄，x平x仄仄平平。 x平x仄平平仄，x仄平平仄仄平。</font></b></p>

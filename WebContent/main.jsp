@@ -10,7 +10,7 @@
 	<frame src="left.jsp" name="left">
 	<frameset rows="7%,*">
 		<frame src="right_top.html" name="right_top">
-		<frame src="jueju.jsp" name="right">
+		<frame src="right_bottom.jsp" name="right">
 	</frameset>
 	
 </frameset>
