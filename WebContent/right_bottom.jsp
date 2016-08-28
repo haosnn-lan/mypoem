@@ -33,6 +33,7 @@ a:active{
 <p><b><font color="red">系统将根据基本的平仄与韵律规则（不包含拗救等特殊规则）</font></b></p>
 <p><b><font color="red">为你判断近体诗的正误</font></b></p>
 <p><b><font color="red">点击左边的绝句、律诗开始作诗</font></b></p>
+<p><b><font color="red">点击左下角欣赏近体诗</font></b></p>
 <br/><br/>
 
 <b><a href="rule_jueju.jsp">绝句平仄押韵规则</a></b><br/><br/>

@@ -8,8 +8,16 @@
   	<servlet-name>MainServlet</servlet-name>
   	<servlet-class>haosnn.servlet.MainServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>RegisterServlet</servlet-name>
+  	<servlet-class>haosnn.servlet.RegisterServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>MainServlet</servlet-name>
   	<url-pattern>/MainServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RegisterServlet</servlet-name>
+  	<url-pattern>/RegisterServlet</url-pattern>
   </servlet-mapping>
 </web-app>

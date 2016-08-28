@@ -36,11 +36,18 @@ font-weight:bolder;
 align:right;
 color:#8B8B83;
 }
+.word3{
+font-size:30pt;
+font-weight:bolder;
+align:right;
+color:#8B8B83;
+}
 -->
 </style>
 </head>
 <body background="images/grey.jpg">
 	<p align="right" class="word1"><a href="jueju.jsp" target="right">╬Ь╬Д</a></p>
 	<p align="right" class="word2"><a href="lvshi.jsp" target="right">бий╚</a></p>
+	<p align="right" class="word3"><a href="enjoy_wyjj.jsp" target="right">╫ЭлЕй╚пюим</a></p>
 </body>
 </html>

@@ -10,10 +10,10 @@
 	<img src="images/gufeng_success.jpg" height="100%" width="100%" style="left:0; top:0;">      
 	</div>
 	<p align="center"><b><font color="red" size="30"><%=savedata.getbt()%></font></b></p>
-	<p align="center"><font color="blue" size="20"><%=savedata.getls(0)%>,<%=savedata.getls(1)%></font></p><br/>
-	<p align="center"><font color="blue" size="20"><%=savedata.getls(2)%>,<%=savedata.getls(3)%></font></p><br/>
-	<p align="center"><font color="blue" size="20"><%=savedata.getls(4)%>,<%=savedata.getls(5)%></font></p><br/>
-	<p align="center"><font color="blue" size="20"><%=savedata.getls(6)%>,<%=savedata.getls(7)%></font></p><br/>
+	<p align="center"><font color="blue" size="20"><%=savedata.getls(0)%> | <%=savedata.getls(1)%></font></p><br/>
+	<p align="center"><font color="blue" size="20"><%=savedata.getls(2)%> | <%=savedata.getls(3)%></font></p><br/>
+	<p align="center"><font color="blue" size="20"><%=savedata.getls(4)%> | <%=savedata.getls(5)%></font></p><br/>
+	<p align="center"><font color="blue" size="20"><%=savedata.getls(6)%> | <%=savedata.getls(7)%></font></p><br/>
 	<p align="center"><a href="jueju.jsp">返回（请保存您的律诗）</a></p>
 	
 </body>
