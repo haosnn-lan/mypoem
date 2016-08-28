@@ -7,8 +7,15 @@ public class MySqlConn {
 	public MySqlConn(){
 		stmt=null;
 		try{
-			Class.forName("com.mysql.jdbc.Driver");
-			conn=DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/jintishi","root","123456");
+			//Class.forName("com.mysql.jdbc.Driver");
+			String driver="com.mysql.jdbc.Driver";
+			String username = System.getenv("ACCESSKEY");
+			String password = System.getenv("SECRETKEY");
+			String dbUrl = String.format("jdbc:mysql://%s:%s/%s", System.getenv("MYSQL_HOST"), System.getenv("MYSQL_PORT"), System.getenv("MYSQL_DB"));
+			Class.forName(driver).newInstance();
+		    conn = DriverManager.getConnection(dbUrl, username, password);
+			//conn=DriverManager.getConnection("jdbc:mysql://MYSQL_HOST:MYSQL_PORT/jintishi","ACCESSKEY","SECRETKEY");
+			//conn=DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/jintishi","root","123456");
 		}catch(Exception e){
 			e.printStackTrace();
 		}

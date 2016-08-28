@@ -22,7 +22,7 @@ public class RegisterServlet extends HttpServlet{
 		MySqlConn mysql=new MySqlConn();
 		Connection ms=mysql.getConn();
 		try{
-			pstmt=ms.prepareStatement("insert into userTable values(null,?,?)");
+			pstmt=ms.prepareStatement("insert into usertable values(null,?,?)");
 			
 			pstmt.setString(1, usr);
 			pstmt.setString(2, pwd);

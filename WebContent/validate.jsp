@@ -11,7 +11,7 @@
             String pwd=request.getParameter("password");		//获取提交的密码
             boolean validated=false;							//验证成功标识
             //查询userTable表中的记录
-            String sql="select * from userTable";
+            String sql="select * from usertable";
             ResultSet rs=MySqlDB.executeQuery(sql);			//取得结果集
             while(rs.next())
             {
